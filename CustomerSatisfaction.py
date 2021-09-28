@@ -12,8 +12,8 @@ from sklearn.model_selection import train_test_split
 
 def model_train(epochs):
     from imblearn.over_sampling import SMOTE
-    train=pd.read_csv('/dataset/dataset/train.csv')
-    test=pd.read_csv('/dataset/dataset/test.csv')
+    train=pd.read_csv("./dataset/dataset/train.csv")
+    test=pd.read_csv("/dataset/dataset/test.csv")
     train.shape, test.shape
 
     y_train_full=train['TARGET']
