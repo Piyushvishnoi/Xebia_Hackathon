@@ -12,8 +12,13 @@ from sklearn.model_selection import train_test_split
 
 def model_train(epochs):
     from imblearn.over_sampling import SMOTE
-    train=pd.read_csv('train.csv')
-    test=pd.read_csv('test.csv')
+    
+    url1 = 'https://drive.google.com/file/d/1EugXDFnwtBnPBvYHK1lUKFKvAfe9qqSz/view?usp=sharing'
+    path1 = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+    url2 = 'https://drive.google.com/file/d/1UdzMtaxfuFH4GfmUEOdRCm66AZwXdXgA/view?usp=sharing'
+    path2 = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+    train=pd.read_csv('path1')
+    test=pd.read_csv('path2')
     train.shape, test.shape
 
     y_train_full=train['TARGET']
